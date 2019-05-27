@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		A3067655229B6A95008A7D55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3067654229B6A95008A7D55 /* AppDelegate.swift */; };
-		A3067657229B6A95008A7D55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3067656229B6A95008A7D55 /* ViewController.swift */; };
 		A306765A229B6A95008A7D55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3067658229B6A95008A7D55 /* Main.storyboard */; };
 		A306765C229B6A97008A7D55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A306765B229B6A97008A7D55 /* Assets.xcassets */; };
 		A306765F229B6A97008A7D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A306765D229B6A97008A7D55 /* LaunchScreen.storyboard */; };
+		A3067667229B6E09008A7D55 /* StarWarsSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3067666229B6E09008A7D55 /* StarWarsSearchTableViewController.swift */; };
+		A306766B229B6FD1008A7D55 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A306766A229B6FD1008A7D55 /* PersonTableViewCell.swift */; };
+		A306766E229B729A008A7D55 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A306766D229B729A008A7D55 /* Person.swift */; };
+		A3067671229B72AC008A7D55 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3067670229B72AC008A7D55 /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3067651229B6A95008A7D55 /* StarWarsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3067654229B6A95008A7D55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A3067656229B6A95008A7D55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3067659229B6A95008A7D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A306765B229B6A97008A7D55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A306765E229B6A97008A7D55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3067660229B6A97008A7D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3067666229B6E09008A7D55 /* StarWarsSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsSearchTableViewController.swift; sourceTree = "<group>"; };
+		A306766A229B6FD1008A7D55 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		A306766D229B729A008A7D55 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		A3067670229B72AC008A7D55 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		A3067653229B6A95008A7D55 /* StarWarsSearch */ = {
 			isa = PBXGroup;
 			children = (
-				A3067654229B6A95008A7D55 /* AppDelegate.swift */,
-				A3067656229B6A95008A7D55 /* ViewController.swift */,
-				A3067658229B6A95008A7D55 /* Main.storyboard */,
-				A306765B229B6A97008A7D55 /* Assets.xcassets */,
-				A306765D229B6A97008A7D55 /* LaunchScreen.storyboard */,
+				A3067672229B72B5008A7D55 /* Controller */,
+				A306766F229B729E008A7D55 /* Model */,
+				A306766C229B6FDA008A7D55 /* Views */,
+				A3067668229B6E1D008A7D55 /* View Controllers */,
+				A3067669229B6E30008A7D55 /* Resources */,
 				A3067660229B6A97008A7D55 /* Info.plist */,
 			);
 			path = StarWarsSearch;
+			sourceTree = "<group>";
+		};
+		A3067668229B6E1D008A7D55 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3067666229B6E09008A7D55 /* StarWarsSearchTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A3067669229B6E30008A7D55 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3067654229B6A95008A7D55 /* AppDelegate.swift */,
+				A3067658229B6A95008A7D55 /* Main.storyboard */,
+				A306765B229B6A97008A7D55 /* Assets.xcassets */,
+				A306765D229B6A97008A7D55 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A306766C229B6FDA008A7D55 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A306766A229B6FD1008A7D55 /* PersonTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A306766F229B729E008A7D55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A306766D229B729A008A7D55 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3067672229B72B5008A7D55 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3067670229B72AC008A7D55 /* PersonController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3067657229B6A95008A7D55 /* ViewController.swift in Sources */,
+				A306766B229B6FD1008A7D55 /* PersonTableViewCell.swift in Sources */,
+				A3067667229B6E09008A7D55 /* StarWarsSearchTableViewController.swift in Sources */,
+				A306766E229B729A008A7D55 /* Person.swift in Sources */,
+				A3067671229B72AC008A7D55 /* PersonController.swift in Sources */,
 				A3067655229B6A95008A7D55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
