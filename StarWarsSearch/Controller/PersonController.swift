@@ -9,6 +9,18 @@
 import Foundation
 
 class PersonController {
+    
+    //1. Base URL
+    //2. Set up URL Components and Query items
+    //3. Add query items to URL Components
+    //4. Get final URL from URL Components
+    //5. Create URL Request with URL
+    //6. Set HTTP Method
+    //7. Create data task with URL Request
+    //  a. handle errors
+    //  b. safely unwrap data
+    //  c. decode data (set strategy if necessary)
+    //  d. set self.people = decodedData 
     enum HTTPMethod: String {
         case get = "GET"
         case put = "PUT"
